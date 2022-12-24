@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID CARD DETECTION</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__title">Fake ID Card Detection</div>
+      <div class="navbar__subtitle">Made By Ali Ghaffarinejad</div>
+    </header>
+    <main class="main">
+      <form
+        action="/"
+        method="post"
+        class="checkform"
+        enctype="multipart/form-data"
+      >
+        <div class="inputfield">
+          <label class="inputfield__label">
+            <b>Upload ID Card Image:</b><br />
+            <div class="inputfield__btn">
+              <input type="file" name="file_upload" />
+            </div>
+          </label>
+        </div>
+        <div class="checkbtn">
+          <button type="submit" class="checkbtn_btn">Check</button>
+        </div>
+      </form>
+      <div class="accuracyresult">
+        <h5>{{pred}}</h5>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <section class="footer__left">
+          <a class="footer__item">Made by Ali Ghaffarinejad</a>
+          <a class="footer__item">Check out my other projects</a>
+        </section>
+        <section class="footer__right">
+          <a class="footer__item">About</a>
+          <a class="footer__item">How this was made</a>
+        </section>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
